@@ -1,0 +1,9 @@
+#!name=Locket Gold Của Tôi
+#!desc=Module tự tạo 100% không liên quan đến người lạ.
+#!category=KichHoat
+
+[Script]
+Locket_Gold = type=http-response,pattern=^https:\/\/api\.locket\.camera\/v1\/users\/.*$,requires-body=1,max-size=0,script-path=https://githubusercontent.com
+
+[MITM]
+hostname = %APPEND% api.locket.camera
